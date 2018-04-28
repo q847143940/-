@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" href="public/layui/css/layui.css" />
+		<link rel="stylesheet" href="css/common.css" />
+	</head>
+
+	<body>
+
+		<head>
+			<div class="title_top_1">
+				<img src="img/title/new-title.png" style="width: 4rem;height: 46px;margin: 0 auto;">
+				<span class="title_top">AWIFI备案平台</span>
+			</div>
+		</head>
+		<div class="layui-row layui-col-space15 height100">
+			<div class="layui-col-md3 height100" style="margin-top: 1%;margin-left: 1%;width: 24%;">
+				<div class="left_top shine">
+					<p class="boxReflect">场所设备统计</p>
+					<div class="statistics" style="height: 12%;">
+						<div class="equipment">
+							<p>全省场所数</p>
+							<p>53193</p>
+						</div>
+						<div class="equipment">
+							<p>全省设备数</p>
+							<p>188583</p>
+						</div>
+
+					</div>
+					<p class="boxReflect">在线概况</p>
+					<div class="progressBar" style="margin-top: 5%;">
+						<p>88%</p>
+						<p>历史在线率</p>
+						<div class="layui-progress progressBar_detail">
+							<div class="layui-progress-bar layui-bg-blue" lay-percent="88%"></div>
+						</div>
+					</div>
+					<div class="progressBar">
+						<p>137159</p>
+						<p>在线设备总数</p>
+						<div class="layui-progress progressBar_detail">
+							<div class="layui-progress-bar layui-bg-red" lay-percent="98%"></div>
+						</div>
+					</div>
+					<div class="progressBar">
+						<p>9</p>
+						<p>心跳数量</p>
+						<div class="layui-progress progressBar_detail">
+							<div class="layui-progress-bar" lay-percent="68%"></div>
+						</div>
+					</div>
+					<p class="boxReflect">在线统计</p>
+					<div id="echarts1">
+
+					</div>
+				</div>
+				<div class="left_buttom shine">
+					<img src="img/title/title_1.png" class="title_img_1">
+					<p class="echarts2_p">场所类型分布</p>
+					<div id="echarts2">
+						
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-md6 height100" style="height: 90%;top: 6%;width: 48%;margin-left: 0.5%;margin-right: 0.5%;">
+				<p class="boxReflect" style="z-index: 999;position: absolute;">设备点位概况</p>
+				<div style="height: 8.6rem;">
+					<div class="shine" id="middle_top">
+
+					</div>
+				</div>
+
+				<div class="middle_buttom shine">
+					<div class="tab">
+						<div class="box">
+							<ul class="menus">
+								<li class="bg">数据上报详情</li>
+								<li>本周虚拟身份排行</li>
+								<!--<li>待定</li>-->
+
+							</ul>
+							<div class="right">
+								<div class="scroll report-list">
+									<table class="layui-table index_table tab_right" lay-skin="line">
+										<thead>
+											<tr>
+												<th>上报地区</th>
+												<th>终端MAC</th>
+												<th>运营商</th>
+												<th>手机号</th>
+												<th>归属地</th>
+											</tr>
+										</thead>
+									</table>
+
+									<div class="report_list_top" id='hdemo' style="overflow:hidden;">
+										<table class="layui-table index_table tab_right" id='indemo' lay-skin="line">
+											<tbody id="hdemo1">
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+												<tr>
+													<td>深圳市龙岗区</td>
+													<td>A8-1K-AX-AS-3A</td>
+													<td>移动预付卡</td>
+													<td>17612081109</td>
+													<td>广东省深圳市</td>
+												</tr>
+											</tbody>
+										</table>
+										<table id='hdemo2' class="layui-table index_table tab_right" lay-skin="line"></table>
+									</div>
+									<div class="tab_right" id="echarts4">
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-md3 height100" style="margin-top: 1%;width: 24%;">
+				<div class="left_top shine">
+					<p class="boxReflect">设备数统计</p>
+					<div class="statistics" style="height: 12%;">
+						<div class="equipment">
+							<p>二合一设备数</p>
+							<p>21359</p>
+						</div>
+						<div class="equipment">
+							<p>三合一设备数</p>
+							<p>31834</p>
+						</div>
+					</div>
+					<p class="boxReflect">心跳在线统计</p>
+					<div id="echarts5"></div>
+					<p class="boxReflect" style="width: 50%;display: inline-block;">场所在线率</p>
+					<p class="boxReflect" style="width: 50%;display: inline-block;margin-left: -28px;">设备在线率</p>
+					<div class="water_percent">
+						<div id="water_percent_1"></div>
+						<div id="water_percent_2" style="margin-left: -5px;"></div>
+					</div>
+
+				</div>
+				<div class="left_buttom shine">
+					<img src="img/title/title_1.png" class="title_img_1">
+					<p class="echarts2_p">本周全省认证数排行</p>
+					<div class="tab_right" id="echarts3"></div>
+
+				</div>
+			</div>
+
+		</div>
+	</body>
+	<script type="text/javascript" src="js/fontSize.js" ></script>>
+	<script type="text/javascript" src="public/layui/layui.all.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/echarts.min.js"></script>
+	<script type="text/javascript" src="js/echarts-gl.min.js"></script>
+	<script type="text/javascript" src="js/echarts-liquidfill.js"></script>
+	<script type="text/javascript" src="js/china.js"></script>
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/echarts_demo.js"></script>
+	<script type="text/html" id="panel-reportedarea">
+		<tr style="display:none;">
+			<td width="17%" html-strArea>清远</td>
+			<td width="25%" html-strTerminalMac>DD-00-FF-45-AA-FF</td>
+			<td width="25%" html-strOperator>移动</td>
+			<td width="18%" html-strTel>13854566751</td>
+			<td width="15%" html-strQCellCore>广东-广州</td>
+		</tr>
+	</script>
+
+</html>
